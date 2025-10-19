@@ -1,1 +1,35 @@
-import type { Metadata } from 'next';\nimport './globals.css';\n\nexport const metadata: Metadata = {\n  title: 'ZOA.fun - Zero-to-One Accelerator',\n  description: 'Where Memes Meet Meaning. The first Build-to-Earn Launchpad. Spark your token, forge its future, and play to build real value.',\n  keywords: ['crypto', 'meme coins', 'launchpad', 'blockchain', 'Web3', 'incubator', 'token'],\n  authors: [{ name: 'ZOA.fun Team' }],\n  viewport: 'width=device-width, initial-scale=1',\n  openGraph: {\n    type: 'website',\n    locale: 'en_US',\n    url: 'https://zoa.fun',\n    title: 'ZOA.fun - Zero-to-One Accelerator',\n    description: 'Where Memes Meet Meaning. The first Build-to-Earn Launchpad.',\n    siteName: 'ZOA.fun',\n  },\n  twitter: {\n    card: 'summary_large_image',\n    title: 'ZOA.fun - Zero-to-One Accelerator',\n    description: 'Where Memes Meet Meaning. The first Build-to-Earn Launchpad.',\n  },\n};\n\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return (\n    <html lang=\"en\">\n      <body className=\"antialiased\">{children}</body>\n    </html>\n  );\n}\n
+import type { Metadata } from 'next';
+import './globals.css';
+
+export const metadata: Metadata = {
+  title: 'ZOA.fun - Zero-to-One Accelerator',
+  description: 'Where Memes Meet Meaning. The first Build-to-Earn Launchpad. Spark your token, forge its future, and play to build real value.',
+  keywords: ['crypto', 'meme coins', 'launchpad', 'blockchain', 'Web3', 'incubator', 'token'],
+  authors: [{ name: 'ZOA.fun Team' }],
+  viewport: 'width=device-width, initial-scale=1',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://zoa.fun',
+    title: 'ZOA.fun - Zero-to-One Accelerator',
+    description: 'Where Memes Meet Meaning. The first Build-to-Earn Launchpad.',
+    siteName: 'ZOA.fun',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ZOA.fun - Zero-to-One Accelerator',
+    description: 'Where Memes Meet Meaning. The first Build-to-Earn Launchpad.',
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="antialiased">{children}</body>
+    </html>
+  );
+}
